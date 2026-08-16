@@ -1,0 +1,12 @@
+{
+  "name": "在庫チェック",
+  "short_name": "在庫チェック",
+  "display": "standalone",
+  "background_color": "#0E7C66",
+  "theme_color": "#0E7C66",
+  "icons": [
+    { "src": "icon512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon180.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "start_url": "."
+}
