@@ -37,9 +37,7 @@
   var APP = document.getElementById('openbtn').href;
   var standalone = (navigator.standalone === true) ||
     (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
-  var visited = false;
-  try { visited = localStorage.getItem('tccv') === '1'; localStorage.setItem('tccv', '1'); } catch (e) {}
-  if (standalone || visited) location.replace(APP);
+  if (standalone) location.replace(APP);
 </script>
 </body>
 </html>
