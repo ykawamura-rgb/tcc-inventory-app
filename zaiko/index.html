@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在庫チェック</title>
+<link rel="apple-touch-icon" href="https://ykawamura-rgb.github.io/tcc-inventory-app/zaiko/z180.png">
+<link rel="icon" type="image/png" href="https://ykawamura-rgb.github.io/tcc-inventory-app/zaiko/z180.png">
+<link rel="manifest" href="https://ykawamura-rgb.github.io/tcc-inventory-app/zaiko/manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="在庫チェック">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0E7C66">
+<style>
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;
+    background:linear-gradient(#12907A,#0A5F4E); color:#fff; min-height:100vh;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:24px; box-sizing:border-box; }
+  img.icon { width:110px; height:110px; border-radius:26px; box-shadow:0 8px 24px rgba(0,0,0,.3); }
+  h1 { font-size:26px; margin:20px 0 6px; }
+  p { font-size:15px; opacity:.92; line-height:1.7; margin:6px 0; }
+  a.open { display:block; background:#fff; color:#0A5F4E; font-size:19px; font-weight:700;
+    padding:18px 44px; border-radius:16px; text-decoration:none; margin-top:22px;
+    box-shadow:0 4px 12px rgba(0,0,0,.25); }
+  .hint { margin-top:28px; font-size:14px; opacity:.85; max-width:340px; }
+</style>
+</head>
+<body>
+<img class="icon" src="https://ykawamura-rgb.github.io/tcc-inventory-app/zaiko/z180.png" alt="在庫チェック">
+<h1>在庫チェック</h1>
+<p>タイムケアクリニック南町田</p>
+<a class="open" id="openbtn" href="https://accounts.google.com/AccountChooser?hd=tccmm.com&continue=https%3A%2F%2Fsites.google.com%2Ftccmm.com%2Fzaiko">アプリを開く</a>
+<p class="hint">はじめての方へ：このページを「ホーム画面に追加」すると、
+次からこのアイコン1つでアプリを開けます。<br>
+（iPhone: 共有ボタン→ホーム画面に追加 ／ Android: メニュー→ホーム画面に追加）</p>
+<script>
+  var APP = document.getElementById('openbtn').href;
+  var standalone = (navigator.standalone === true) ||
+    (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+  if (standalone) location.replace(APP);
+</script>
+</body>
+</html>
